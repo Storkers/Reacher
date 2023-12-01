@@ -6,12 +6,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.content.Intent
 import android.widget.Button
 import android.widget.TextView
-import androidx.compose.ui.tooling.preview.Preview
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.layout) // Definindo o layout openscreen.xml como conteúdo da MainActivity
+        setContentView(R.layout.layout)
 
         val buttonLogin = findViewById<TextView>(R.id.loginButton)
         buttonLogin.setOnClickListener {
@@ -19,8 +18,8 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val buttonComecar = findViewById<Button>(R.id.button1)
-        buttonComecar.setOnClickListener {
+        val buttonHome = findViewById<Button>(R.id.button1)
+        buttonHome.setOnClickListener {
             val intent = Intent(this, Home::class.java)
             startActivity(intent)
         }
