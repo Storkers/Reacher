@@ -2,76 +2,38 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/home"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:orientation="vertical"
-    android:background="@color/white" >
+    android:orientation="vertical">
 
-    <ImageView
+
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@drawable/areia"
-        android:contentDescription="@string/description_areia_image" />
+        android:layout_height="670dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="61dp" />
 
-    <androidx.cardview.widget.CardView
+    <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:padding="16dp"
-        android:background="#FFF"
-        app:cardCornerRadius="20dp">
+        android:layout_height="76dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="670dp"
+        android:layout_marginBottom="0dp"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="@color/black"
+        android:background="#FFFFFF"
+        app:menu="@menu/bottom_navigation_menu">
 
-        <ImageView
-            android:layout_width="400dp"
-            android:layout_height="200dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/tracking"
-            android:contentDescription="@string/description_areia_image" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Tracking"
-            android:textSize="40sp" />
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:background="#FFF"
-        android:padding="16dp"
-        app:cardCornerRadius="8dp"
-        android:layout_marginEnd="120dp"
-        android:layout_marginBottom="472dp">
-
-        <ImageView
-            android:layout_width="400dp"
-            android:layout_height="200dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/tracking"
-            android:contentDescription="@string/description_areia_image" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Tracking"
-            android:textSize="40sp" />
-
-
-    </androidx.cardview.widget.CardView>
-
-
-
-
-
-
-
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 </RelativeLayout>
 
