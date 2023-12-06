@@ -6,7 +6,7 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/findex_logo"
         android:roundIcon="@drawable/logo_app"
         android:supportsRtl="true"
         android:theme="@style/Theme.ReacherJ"
@@ -32,6 +32,18 @@
         <activity
             android:name=".Home"
             android:label="HomeActivity">
+
+        </activity>
+
+        <activity
+            android:name=".Favorite"
+            android:label="FavoriteActivity">
+
+        </activity>
+
+        <activity
+            android:name=".Maps"
+            android:label="MapsActivity">
 
         </activity>
 

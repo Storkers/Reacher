@@ -100,5 +100,17 @@
         android:text="Login"
         android:textSize="40sp"/>
 
+    <Button
+        android:id="@+id/buttonLoginBack"
+        android:layout_width="41dp"
+        android:layout_height="39dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/button_background"
+        android:drawableStart="@drawable/arrow_back"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="onBackButtonClick"
+        android:padding="9dp" />
+
 
 </RelativeLayout>

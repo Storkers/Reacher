@@ -20,8 +20,8 @@ class MainActivity : AppCompatActivity() {
 
         val buttonHome = findViewById<Button>(R.id.button1)
         buttonHome.setOnClickListener {
-            val intent = Intent(this, Home::class.java)
-            startActivity(intent)
+            val intent1 = Intent(this, Home::class.java)
+            startActivity(intent1)
         }
     }
 }
