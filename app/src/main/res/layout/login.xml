@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -22,8 +23,10 @@
         android:layout_marginEnd="84dp"
         android:layout_marginBottom="443dp"
         android:ems="10"
-        android:hint="E-mail"
-        android:inputType="textEmailAddress" />
+        android:hint="@string/e_mail"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#37474F"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
@@ -34,8 +37,10 @@
         android:layout_marginEnd="82dp"
         android:layout_marginBottom="366dp"
         android:ems="10"
-        android:hint="Senha"
-        android:inputType="textPassword" />
+        android:hint="@string/senha"
+        android:inputType="textPassword"
+        android:textColorHint="#424242"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/button"
@@ -45,8 +50,9 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="150dp"
         android:layout_marginBottom="249dp"
-        android:text="Entrar"
-        android:background="@drawable/rounded_button" />
+        android:background="@drawable/rounded_button"
+        android:text="@string/entrar"
+        android:textColor="#000000" />
 
     <TextView
         android:id="@+id/textView3"
@@ -56,7 +62,8 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="184dp"
         android:layout_marginBottom="208dp"
-        android:text="ou" />
+        android:text="@string/ou"
+        android:textColor="#6D4C41" />
 
     <Button
         android:id="@+id/button2"
@@ -66,7 +73,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="221dp"
         android:layout_marginBottom="133dp"
-        android:text="Google" />
+        android:text="@string/google" />
 
     <Button
         android:id="@+id/button3"
@@ -76,7 +83,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="108dp"
         android:layout_marginBottom="132dp"
-        android:text="Apple" />
+        android:text="@string/apple" />
 
     <TextView
         android:id="@+id/textView4"
@@ -86,7 +93,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="191dp"
         android:layout_marginBottom="67dp"
-        android:text="Não possui conta?"
+        android:text="@string/n_o_possui_conta"
         android:textColor="@color/white" />
 
     <TextView
@@ -97,20 +104,26 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="146dp"
         android:layout_marginBottom="566dp"
-        android:text="Login"
-        android:textSize="40sp"/>
+        android:text="@string/login"
+        android:textSize="40sp"
+        tools:ignore="TextSizeCheck" />
 
     <Button
         android:id="@+id/buttonLoginBack"
-        android:layout_width="41dp"
-        android:layout_height="39dp"
-        android:layout_margin="16dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/button_background"
+        android:contentDescription="@string/botao_para_voltar_na_tela_anterior"
         android:drawableStart="@drawable/arrow_back"
         android:drawablePadding="8dp"
         android:gravity="center_vertical|center_horizontal"
         android:onClick="onBackButtonClick"
-        android:padding="9dp" />
+        android:padding="9dp"
+        tools:ignore="UsingOnClickInXml" />
 
 
 </RelativeLayout>

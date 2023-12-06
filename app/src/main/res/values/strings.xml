@@ -2,6 +2,17 @@
     <string name="app_name">Reacher,J</string>
     <string name="description_areia_image">Scenic image of a sandy beach</string>
     <string name="logo">Logo</string>
+    <string name="entrar">Entrar</string>
+    <string name="google">Google</string>
+    <string name="apple">Apple</string>
+    <string name="botao_para_voltar_na_tela_anterior">Botao para voltar na tela anterior</string>
+    <string name="e_mail">E-mail</string>
+    <string name="senha">Senha</string>
+    <string name="ou">ou</string>
+    <string name="n_o_possui_conta">Não possui conta?</string>
+    <string name="login">Login</string>
+    <string name="favoritos">Favoritos</string>
+    <string name="todo">TODO</string>
 
 
 </resources>

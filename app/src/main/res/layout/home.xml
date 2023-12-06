@@ -38,7 +38,8 @@
         android:background="#FFFFFF"
         app:itemIconTint="@color/black"
         app:itemTextColor="@color/black"
-        app:menu="@menu/bottom_navigation_menu">
+        app:menu="@menu/bottom_navigation_menu"
+        tools:ignore="VisualLintBottomNav">
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
@@ -54,6 +55,8 @@
         android:clickable="true"
         android:src="@drawable/person"
         app:fabSize="mini"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@tools:sample/avatars"
+        android:contentDescription="@string/todo"
+        android:focusable="true" />
 </RelativeLayout>
 
