@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 
 class Home : AppCompatActivity()
@@ -45,5 +46,11 @@ class Home : AppCompatActivity()
                     else -> false
                 }
             }
+
+            val buttonUser = findViewById<FloatingActionButton>(R.id.floatingActionButton)
+            buttonUser.setOnClickListener{
+
+                val intent2 = Intent(this, User::class.java);
+                startActivity(intent2);}
+            }
         }
-}

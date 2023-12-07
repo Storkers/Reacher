@@ -1,41 +1,219 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
+<!-- Região clicável para o endereço -->
+
+    <!-- Região clicável para a conta -->
+
+    <LinearLayout
+        android:id="@+id/llEndereco"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/water"
-        android:importantForAccessibility="no" />
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/apple_clickable_background"
+        android:padding="16dp">
 
-    <Button
-        android:id="@+id/buttonMapBack"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_margin="16dp"
-        android:background="@drawable/button_background"
-        android:contentDescription="@string/app_name"
-        android:drawableStart="@drawable/arrow_back"
-        android:drawablePadding="8dp"
-        android:gravity="center_vertical|center_horizontal"
-        android:onClick="onBackButtonClick"
-        android:padding="9dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.043"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023"
-        tools:ignore="MissingConstraints,UsingOnClickInXml" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:contentDescription="configuracoes"
+            android:src="@drawable/settings"
+            android:tint="@color/grey" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="Meu endereço"
+            android:textColor="@color/apple_text_color"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="340dp"
+            android:layout_height="32dp"
+            android:contentDescription="configuracoes"
+            android:src="@drawable/arrow_forward"
+            android:tint="@color/grey" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llConta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llEndereco"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="-250dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/custom_background_bottom"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:contentDescription="Conta"
+            android:src="@drawable/heart_fill"
+            android:tint="@color/grey" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="Conta"
+            android:textColor="@color/apple_text_color"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="480dp"
+            android:layout_height="32dp"
+            android:contentDescription="configuracoes"
+            android:src="@drawable/arrow_forward"
+            android:tint="@color/grey" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llNotificacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/apple_clickable_background"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:contentDescription="configuracoes"
+            android:src="@drawable/settings"
+            android:tint="@color/grey" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="Notificação"
+            android:textColor="@color/apple_text_color"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="390dp"
+            android:layout_height="32dp"
+            android:contentDescription="configuracoes"
+            android:src="@drawable/arrow_forward"
+            android:tint="@color/grey" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llEndereco"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="-25dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/apple_rectangle_background"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:contentDescription="Conta"
+            android:src="@drawable/heart_fill"
+            android:tint="@color/grey" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="Senhas"
+            android:textColor="@color/apple_text_color"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="460dp"
+            android:layout_height="32dp"
+            android:contentDescription="configuracoes"
+            android:src="@drawable/arrow_forward"
+            android:tint="@color/grey" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llEndereco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/apple_rectangle_background"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:contentDescription="configuracoes"
+            android:src="@drawable/settings"
+            android:tint="@color/grey" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="Dispositivos"
+            android:textColor="@color/apple_text_color"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="380dp"
+            android:layout_height="32dp"
+            android:contentDescription="configuracoes"
+            android:src="@drawable/arrow_forward"
+            android:tint="@color/grey" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llConta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llEndereco"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/custom_background_bottom"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:contentDescription="Conta"
+            android:src="@drawable/heart_fill"
+            android:tint="@color/grey" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="Idioma"
+            android:textColor="@color/apple_text_color"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="470dp"
+            android:layout_height="32dp"
+            android:contentDescription="configuracoes"
+            android:src="@drawable/arrow_forward"
+            android:tint="@color/grey" />
+    </LinearLayout>
+
+
+</RelativeLayout>

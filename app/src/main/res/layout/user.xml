@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey">
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:src="@drawable/begeazul">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="421dp"
+                    android:layout_height="327dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/begeazul"
+                    tools:layout_editor_absoluteX="-5dp"
+                    tools:layout_editor_absoluteY="-6dp" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/profile"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView2"
+                    app:layout_constraintHorizontal_bias="0.504"
+                    app:layout_constraintStart_toStartOf="@+id/imageView2"
+                    app:layout_constraintTop_toTopOf="@+id/imageView2"
+                    app:layout_constraintVertical_bias="0.256"
+                    app:shapeAppearanceOverlay="@style/circular" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="Hiudy Martinhago Carvalho"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="258dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="12dp"
+                    android:text="Engenheiro e esportista em busca de novas aventuras"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/llEndereco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="-50dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/apple_clickable_background"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:contentDescription="configuracoes"
+                    android:src="@drawable/settings"
+                    android:tint="@color/grey"
+                    tools:ignore="UseAppTint" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="Meu endereço"
+                    android:textColor="@color/apple_text_color"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="340dp"
+                    android:layout_height="32dp"
+                    android:contentDescription="configuracoes"
+                    android:src="@drawable/arrow_forward"
+                    android:tint="@color/grey"
+                    tools:ignore="UseAppTint" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llConta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/llEndereco"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="-25dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/custom_background_bottom"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:contentDescription="Conta"
+                    android:src="@drawable/heart_fill"
+                    android:tint="@color/grey"
+                    tools:ignore="UseAppTint" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="Conta"
+                    android:textColor="@color/apple_text_color"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="480dp"
+                    android:layout_height="32dp"
+                    android:contentDescription="configuracoes"
+                    android:src="@drawable/arrow_forward"
+                    android:tint="@color/grey"
+                    tools:ignore="UseAppTint" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llNotificacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/apple_clickable_background"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:contentDescription="configuracoes"
+                    android:src="@drawable/settings"
+                    android:tint="@color/grey"
+                    tools:ignore="UseAppTint" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="Notificação"
+                    android:textColor="@color/apple_text_color"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="390dp"
+                    android:layout_height="32dp"
+                    android:contentDescription="configuracoes"
+                    android:src="@drawable/arrow_forward"
+                    android:tint="@color/grey"
+                    tools:ignore="UseAppTint" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDispositivo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/llEndereco"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="-25dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/apple_rectangle_background"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:contentDescription="Conta"
+                    android:src="@drawable/heart_fill"
+                    android:tint="@color/grey"
+                    tools:ignore="UseAppTint" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="Dispositivos"
+                    android:textColor="@color/apple_text_color"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="460dp"
+                    android:layout_height="32dp"
+                    android:contentDescription="configuracoes"
+                    android:src="@drawable/arrow_forward"
+                    android:tint="@color/grey"
+                    tools:ignore="UseAppTint" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSenha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/llEndereco"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="-25dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/apple_rectangle_background"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:contentDescription="Conta"
+                    android:src="@drawable/heart_fill"
+                    android:tint="@color/grey"
+                    tools:ignore="UseAppTint" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="Senhas"
+                    android:textColor="@color/apple_text_color"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="460dp"
+                    android:layout_height="32dp"
+                    android:contentDescription="configuracoes"
+                    android:src="@drawable/arrow_forward"
+                    android:tint="@color/grey"
+                    tools:ignore="UseAppTint" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llIdioma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/llEndereco"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="-25dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/custom_background_bottom"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:contentDescription="Conta"
+                    android:src="@drawable/heart_fill"
+                    android:tint="@color/grey"
+                    tools:ignore="UseAppTint" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="Idioma"
+                    android:textColor="@color/apple_text_color"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="470dp"
+                    android:layout_height="32dp"
+                    android:contentDescription="configuracoes"
+                    android:src="@drawable/arrow_forward"
+                    android:tint="@color/grey"
+                    tools:ignore="UseAppTint" />
+            </LinearLayout>
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_navigation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="0dp"
+                android:background="#FFFFFF"
+                app:itemIconTint="@color/black"
+                app:itemTextColor="@color/black"
+                app:menu="@menu/bottom_navigation_menu"
+                tools:ignore="VisualLintBottomNav">
+
+            </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
