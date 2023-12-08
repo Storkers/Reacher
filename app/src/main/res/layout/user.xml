@@ -23,14 +23,34 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
+                <Button
+                    android:id="@+id/buttonUserBack"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/button_background"
+                    android:contentDescription="@string/app_name"
+                    android:drawableStart="@drawable/arrow_back"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:onClick="onBackButtonClick"
+                    android:padding="9dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.043"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.023"
+                    tools:ignore="MissingConstraints,UsingOnClickInXml" />
+
                 <ImageView
                     android:id="@+id/imageView2"
                     android:layout_width="421dp"
                     android:layout_height="327dp"
                     android:scaleType="fitXY"
                     android:src="@drawable/begeazul"
-                    tools:layout_editor_absoluteX="-5dp"
-                    tools:layout_editor_absoluteY="-6dp" />
+                    tools:layout_editor_absoluteX="-6dp"
+                    tools:layout_editor_absoluteY="-3dp" />
 
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/imageView5"
@@ -213,7 +233,7 @@
                     android:textSize="18sp" />
 
                 <ImageView
-                    android:layout_width="460dp"
+                    android:layout_width="380dp"
                     android:layout_height="32dp"
                     android:contentDescription="configuracoes"
                     android:src="@drawable/arrow_forward"
@@ -293,32 +313,26 @@
                     android:src="@drawable/arrow_forward"
                     android:tint="@color/grey"
                     tools:ignore="UseAppTint" />
+
             </LinearLayout>
 
-            <com.google.android.material.bottomnavigation.BottomNavigationView
-                android:id="@+id/bottom_navigation"
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="379dp"
+                android:layout_height="48dp"
+                android:background="@drawable/sign_out_background"
+                android:text="Sign Out"
+                tools:layout_editor_absoluteX="-5dp"
+                tools:layout_editor_absoluteY="-6dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="16dp"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="0dp"
-                android:background="#FFFFFF"
-                app:itemIconTint="@color/black"
-                app:itemTextColor="@color/black"
-                app:menu="@menu/bottom_navigation_menu"
-                tools:ignore="VisualLintBottomNav">
+                android:layout_height="match_parent">
 
-            </com.google.android.material.bottomnavigation.BottomNavigationView>
-
-
-
-
-
-
-
-
-
-
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
 
         </LinearLayout>

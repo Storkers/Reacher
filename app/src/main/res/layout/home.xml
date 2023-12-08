@@ -30,13 +30,16 @@
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
-        android:layout_width="match_parent"
+        android:layout_width="368dp"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
+        android:layout_marginStart="21dp"
         android:layout_marginTop="670dp"
+        android:layout_marginEnd="21dp"
         android:layout_marginBottom="0dp"
-        android:background="#FFFFFF"
-        app:itemIconTint="@color/black"
+        android:background="@drawable/navigantion_bar_background"
         app:itemTextColor="@color/black"
         app:menu="@menu/bottom_navigation_menu"
         tools:ignore="VisualLintBottomNav">
@@ -54,6 +57,7 @@
         android:layout_marginBottom="668dp"
         android:clickable="true"
         android:src="@drawable/person"
+        android:backgroundTint="@color/amarelo"
         app:fabSize="mini"
         tools:srcCompat="@tools:sample/avatars"
         android:contentDescription="@string/todo"
