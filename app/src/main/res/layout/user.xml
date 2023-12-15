@@ -96,7 +96,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <LinearLayout
-                android:id="@+id/llEndereco"
+                android:id="@+id/Conta"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -109,7 +109,43 @@
                 <ImageView
                     android:layout_width="32dp"
                     android:layout_height="32dp"
+                    android:contentDescription="conta do usuario"
+                    android:src="@drawable/person_pin"
+                    android:tint="@color/grey"
+                    tools:ignore="UseAppTint" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="Minha Conta"
+                    android:textColor="@color/apple_text_color"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="370dp"
+                    android:layout_height="32dp"
                     android:contentDescription="configuracoes"
+                    android:src="@drawable/arrow_forward"
+                    android:tint="@color/grey"
+                    tools:ignore="UseAppTint" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Configuracoes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="-25dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/custom_background_bottom"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:contentDescription="Conta"
                     android:src="@drawable/settings"
                     android:tint="@color/grey"
                     tools:ignore="UseAppTint" />
@@ -118,7 +154,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
-                    android:text="Meu endereço"
+                    android:text="Configurações"
                     android:textColor="@color/apple_text_color"
                     android:textSize="18sp" />
 
@@ -132,44 +168,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/llConta"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/llEndereco"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="-25dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginBottom="16dp"
-                android:background="@drawable/custom_background_bottom"
-                android:padding="16dp">
-
-                <ImageView
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
-                    android:contentDescription="Conta"
-                    android:src="@drawable/heart_fill"
-                    android:tint="@color/grey"
-                    tools:ignore="UseAppTint" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="12dp"
-                    android:text="Conta"
-                    android:textColor="@color/apple_text_color"
-                    android:textSize="18sp" />
-
-                <ImageView
-                    android:layout_width="480dp"
-                    android:layout_height="32dp"
-                    android:contentDescription="configuracoes"
-                    android:src="@drawable/arrow_forward"
-                    android:tint="@color/grey"
-                    tools:ignore="UseAppTint" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/llNotificacao"
+                android:id="@+id/Notificacao"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -183,7 +182,7 @@
                     android:layout_width="32dp"
                     android:layout_height="32dp"
                     android:contentDescription="configuracoes"
-                    android:src="@drawable/settings"
+                    android:src="@drawable/notifications"
                     android:tint="@color/grey"
                     tools:ignore="UseAppTint" />
 
@@ -205,10 +204,9 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/llDispositivo"
+                android:id="@+id/Pagamentos"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/llEndereco"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="-25dp"
                 android:layout_marginEnd="16dp"
@@ -220,7 +218,7 @@
                     android:layout_width="32dp"
                     android:layout_height="32dp"
                     android:contentDescription="Conta"
-                    android:src="@drawable/heart_fill"
+                    android:src="@drawable/monetization"
                     android:tint="@color/grey"
                     tools:ignore="UseAppTint" />
 
@@ -228,12 +226,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
-                    android:text="Dispositivos"
+                    android:text="Pagamentos"
                     android:textColor="@color/apple_text_color"
                     android:textSize="18sp" />
 
                 <ImageView
-                    android:layout_width="380dp"
+                    android:layout_width="370dp"
                     android:layout_height="32dp"
                     android:contentDescription="configuracoes"
                     android:src="@drawable/arrow_forward"
@@ -242,10 +240,9 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/llSenha"
+                android:id="@+id/Historico"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/llEndereco"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="-25dp"
                 android:layout_marginEnd="16dp"
@@ -257,7 +254,7 @@
                     android:layout_width="32dp"
                     android:layout_height="32dp"
                     android:contentDescription="Conta"
-                    android:src="@drawable/heart_fill"
+                    android:src="@drawable/history"
                     android:tint="@color/grey"
                     tools:ignore="UseAppTint" />
 
@@ -265,12 +262,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
-                    android:text="Senhas"
+                    android:text="Historico"
                     android:textColor="@color/apple_text_color"
                     android:textSize="18sp" />
 
                 <ImageView
-                    android:layout_width="460dp"
+                    android:layout_width="430dp"
                     android:layout_height="32dp"
                     android:contentDescription="configuracoes"
                     android:src="@drawable/arrow_forward"
@@ -279,10 +276,9 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/llIdioma"
+                android:id="@+id/Documentos"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/llEndereco"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="-25dp"
                 android:layout_marginEnd="16dp"
@@ -294,7 +290,7 @@
                     android:layout_width="32dp"
                     android:layout_height="32dp"
                     android:contentDescription="Conta"
-                    android:src="@drawable/heart_fill"
+                    android:src="@drawable/newspaper"
                     android:tint="@color/grey"
                     tools:ignore="UseAppTint" />
 
@@ -302,12 +298,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
-                    android:text="Idioma"
+                    android:text="Termos e Condições "
                     android:textColor="@color/apple_text_color"
                     android:textSize="18sp" />
 
                 <ImageView
-                    android:layout_width="470dp"
+                    android:layout_width="240dp"
                     android:layout_height="32dp"
                     android:contentDescription="configuracoes"
                     android:src="@drawable/arrow_forward"

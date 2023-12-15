@@ -37,8 +37,8 @@ class Home : AppCompatActivity()
 
                         R.id.navigation_map ->
                         {
-                            val wish = Intent(this, Maps::class.java)
-                            startActivity(wish)
+                            val maps = Intent(this, Maps::class.java)
+                            startActivity(maps)
 
                             true
                         }

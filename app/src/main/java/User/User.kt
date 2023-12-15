@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.provider.MediaStore
 import android.content.Intent
 import android.app.Activity
+import android.widget.LinearLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 class User : AppCompatActivity()
@@ -19,7 +20,8 @@ class User : AppCompatActivity()
         private lateinit var buttonChangeBackground: Button
         private lateinit var buttonChangeProfile: Button
 
-        private val PICK_IMAGE = 100
+        private val PICK_IMAGE_PROFILE = 101
+        private val PICK_IMAGE_BACKGROUND = 102
         @SuppressLint("MissingInflatedId")
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
@@ -30,48 +32,36 @@ class User : AppCompatActivity()
                 finish() // Chama o método padrão de voltar
             }
 
-            imageViewProfile = findViewById<ImageView>(R.id.imageView5)
-            imageViewBackground = findViewById<ImageView>(R.id.imageView2)
+            val seleta = findViewById<LinearLayout>(R.id.Conta)
+            seleta.setOnClickListener {
+                val intent = Intent(this, Login::class.java)
+                startActivity(intent) }
 
-            // Definindo um clique na imagem de perfil para abrir a galeria
-            imageViewProfile.setOnClickListener {
-                openGalleryForProfile()
-            }
+            val configura = findViewById<LinearLayout>(R.id.Configuracoes)
+            configura.setOnClickListener {
+                val intent = Intent(this, Login::class.java)
+                startActivity(intent) }
 
-            // Definindo um clique na imagem de fundo para abrir a galeria
-            imageViewBackground.setOnClickListener {
-                openGalleryForBackground()
-            }
+            val notifica = findViewById<LinearLayout>(R.id.Notificacao)
+            notifica.setOnClickListener {
+                val intent = Intent(this, Login::class.java)
+                startActivity(intent) }
+
+            val pagamento = findViewById<LinearLayout>(R.id.Pagamentos)
+            pagamento.setOnClickListener {
+                val intent = Intent(this, Login::class.java)
+                startActivity(intent) }
+
+            val historico = findViewById<LinearLayout>(R.id.Historico)
+            historico.setOnClickListener {
+                val intent = Intent(this, Login::class.java)
+                startActivity(intent) }
+
+            val documento = findViewById<LinearLayout>(R.id.Documentos)
+            documento.setOnClickListener {
+                val intent = Intent(this, Login::class.java)
+                startActivity(intent) }
         }
 
-    // Método para abrir a galeria para selecionar uma imagem de perfil
-    private fun openGalleryForProfile() {
-        val intent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
-        startActivityForResult(intent, PICK_IMAGE)
-    }
-
-    // Método para abrir a galeria para selecionar uma imagem de fundo
-    private fun openGalleryForBackground() {
-        val intent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
-        startActivityForResult(intent, PICK_IMAGE)
-    }
-
-    // Método chamado após selecionar a imagem na galeria
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-        if (resultCode == Activity.RESULT_OK && requestCode == PICK_IMAGE) {
-            val imageUri = data?.data
-            // Atualizar as imagens de perfil e de fundo com a imagem selecionada
-            imageUri?.let {
-                if (requestCode == PICK_IMAGE) {
-                    // Atualizar a imagem de perfil
-                    imageViewProfile.setImageURI(imageUri)
-                } else {
-                    // Atualizar a imagem de fundo
-                    imageViewBackground.setImageURI(imageUri)
-                }
-            }
-        }
-    }
 
 }

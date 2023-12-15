@@ -16,11 +16,13 @@
     <color name="apple_light_gray">#F2F2F7</color>
     <color name="apple_text_color">#333333</color>
     <color name="apple_light_blue">#A6D0F4</color>
-    <color name="blue">#214895</color>
+    <color name="azul">#214895</color>
     <color name="amarelo">#F3BC01</color>
     <color name="laranja">#F58400</color>
     <color name="verde_escuro">#054A1C</color>
     <color name="marrom">#856656</color>
     <color name="verde_agua">#7FFFD4</color>
     <color name="verde_agua_escuro">#40E0D0</color>
+    <color name="blackblue">#040720</color>
+    <color name="blue">#29B6F6</color>
 </resources>
