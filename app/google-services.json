@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "631278363352",
+    "project_id": "findex-7b4a1",
+    "storage_bucket": "findex-7b4a1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:631278363352:android:1f55fa6524b93f680dadad",
+        "android_client_info": {
+          "package_name": "com.example.reacherj"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "631278363352-tqfl0i2k7snaaoehonk9rpi0544oacv5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACG1Lj2i-7ewqbJASDTkFsDGsNAqd03CI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "631278363352-tqfl0i2k7snaaoehonk9rpi0544oacv5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
