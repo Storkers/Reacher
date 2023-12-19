@@ -3,19 +3,15 @@
 
         <item
             android:id="@+id/navigation_home"
-            android:icon="@drawable/home_8_line"
-            android:title="Inicio"
-            android:iconTint="@color/red"/>
+            android:icon="@drawable/baseline_add_business_24"
+            android:title="Inicio"/>
         <item
             android:id="@+id/navigation_favorites"
             android:icon="@drawable/heart_fill"
-            android:title="Favoritos"
-            android:iconTint="@color/black" />
+            android:title="Favoritos"/>
         <item
             android:id="@+id/navigation_map"
             android:icon="@drawable/map_line"
-            android:title="Mapa"
-            android:iconTint="@color/apple_blue"/>
-
+            android:title="Mapa"/>
 
 </menu>

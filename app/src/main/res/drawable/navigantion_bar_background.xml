@@ -1,29 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+             android:shape="rectangle">
 
-    <!-- Background padrão com cantos arredondados -->
-    <item>
-        <shape android:shape="rectangle">
-            <solid android:color="@color/apple_light_gray" />
-            <corners
-                android:topLeftRadius="90dp"
-                android:topRightRadius="90dp"
-                android:bottomLeftRadius="90dp"
-                android:bottomRightRadius="90dp"/>
-        </shape>
+            <solid android:color="@color/grey" />
+            <corners android:radius="100dp"/>
 
-    </item>
-
-    <!-- Efeito de pressionar -->
-    <item android:state_pressed="true">
-        <shape android:shape="rectangle">
-            <solid android:color="@color/apple_light_gray" />
-            <corners
-                android:topLeftRadius="90dp"
-                android:topRightRadius="90dp"
-                android:bottomLeftRadius="90dp"
-                android:bottomRightRadius="90dp"/>
-        </shape>
-    </item>
-</layer-list>
+</shape>
 

@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:gravity="center"
     android:id="@+id/layout">
@@ -10,49 +11,57 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:alpha="0.5"
+        android:contentDescription="@string/description_areia_image"
         android:scaleType="centerCrop"
-        android:src="@drawable/paisagem"
-        android:contentDescription="@string/description_areia_image" />
+        android:src="@drawable/paisagem" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="229dp"
-        android:layout_height="56dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="84dp"
-        android:layout_marginBottom="443dp"
-        android:ems="10"
-        android:hint="@string/e_mail"
-        android:inputType="textEmailAddress"
-        android:textColorHint="#37474F"
-        android:autofillHints="" />
-
-    <EditText
-        android:id="@+id/editTextTextPassword"
-        android:layout_width="229dp"
-        android:layout_height="56dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="82dp"
-        android:layout_marginBottom="366dp"
-        android:ems="10"
-        android:hint="@string/senha"
-        android:inputType="textPassword"
-        android:textColorHint="#424242"
-        android:autofillHints="" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="114dp"
+        android:layout_width="269dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="150dp"
-        android:layout_marginBottom="249dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="454dp"
+        android:autofillHints=""
+        android:textAlignment="center"
+        android:ems="10"
+        android:hint="@string/e_mail"
+        android:background="@drawable/email_senha_background"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:textColorHint="#80214895" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="271dp"
+        android:layout_height="55dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="367dp"
+        android:ems="10"
+        android:hint="@string/senha"
+        android:textAlignment="center"
+        android:autofillHints="password"
+        android:background="@drawable/email_senha_background"
+        android:inputType="textPassword"
+        android:textColorHint="#80214895"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="274dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="69dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="291dp"
         android:background="@drawable/rounded_button"
         android:text="@string/entrar"
-        android:textColor="#000000" />
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/textView3"
@@ -60,30 +69,25 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="184dp"
-        android:layout_marginBottom="208dp"
-        android:text="@string/ou"
-        android:textColor="#6D4C41" />
+        android:layout_marginEnd="203dp"
+        android:layout_marginBottom="209dp"
+        android:text="ou"
+        android:textColor="@color/azul" />
 
-    <Button
-        android:id="@+id/button2"
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/google_sign_in_button"
+        app:icon="@drawable/ic_google_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="221dp"
-        android:layout_marginBottom="133dp"
-        android:text="@string/google" />
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="233dp"
+        android:layout_marginBottom="124dp" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="108dp"
-        android:layout_marginBottom="132dp"
-        android:text="@string/apple" />
+
+
 
     <TextView
         android:id="@+id/textView4"
@@ -91,22 +95,20 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="191dp"
-        android:layout_marginBottom="67dp"
-        android:text="@string/n_o_possui_conta"
-        android:textColor="@color/white" />
+        android:layout_marginEnd="161dp"
+        android:layout_marginBottom="68dp"
+        android:text="Criar nova conta"
+        android:textColor="@color/azul" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="117dp"
-        android:layout_height="55dp"
+    <ImageView
+        android:layout_width="177dp"
+        android:layout_height="175dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="146dp"
-        android:layout_marginBottom="566dp"
-        android:text="@string/login"
-        android:textSize="40sp"
-        tools:ignore="TextSizeCheck" />
+        android:layout_marginEnd="117dp"
+        android:layout_marginBottom="486dp"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/findex_logo" />
 
     <Button
         android:id="@+id/buttonLoginBack"
@@ -124,6 +126,34 @@
         android:onClick="onBackButtonClick"
         android:padding="9dp"
         tools:ignore="UsingOnClickInXml" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="145dp"
+        android:layout_marginBottom="253dp"
+        android:text="@string/esqueci_minha_senha"
+        android:textColor="@color/azul"/>
+
+    <Button
+        android:id="@+id/apple_sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="129dp"
+        android:background="@color/white"
+        android:drawableStart="@drawable/apple_logo"
+        android:drawablePadding="8dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="@string/sign_in"
+        android:textColor="@color/black"
+        android:textSize="12sp"/>
 
 
 </RelativeLayout>

@@ -14,6 +14,8 @@
     <string name="favoritos">Favoritos</string>
     <string name="todo">TODO</string>
     <string name="button">Button</string>
+    <string name="sign_in">Sign In</string>
+    <string name="esqueci_minha_senha">Esqueci minha senha</string>
 
 
 </resources>

@@ -1,9 +1,13 @@
-package com.example.reacherj
+package Home
 
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.reacherj.Favorite
+import com.example.reacherj.Maps
+import com.example.reacherj.R
+import com.example.reacherj.User
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
@@ -20,12 +24,6 @@ class Home : AppCompatActivity()
             bottomNavigationView.setOnItemSelectedListener { menuItem ->
                 when (menuItem.itemId) {
 
-                       R.id.navigation_home ->
-                       {
-                            val casa = Intent(this, Home::class.java)
-                            startActivity(casa)
-                               true
-                        }
 
                         R.id.navigation_favorites ->
                         {

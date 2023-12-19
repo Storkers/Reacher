@@ -31,7 +31,7 @@
         </activity>
 
         <activity
-            android:name=".Home"
+            android:name="Home.Home"
             android:label="HomeActivity">
 
         </activity>
