@@ -71,7 +71,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
-                    android:text="@string/hiudy_martinhago_carvalho"
+                    android:text="@string/engenheiro_e_esportista_em_busca_de_novas_aventuras"
                     android:textColor="@color/black"
                     android:textStyle="bold"
                     android:gravity="center"
