@@ -1,11 +1,10 @@
-package Home
+package com.example.reacherj
 
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.reacherj.Favorite
-import com.example.reacherj.Maps
 import com.example.reacherj.R
 import com.example.reacherj.User
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -29,14 +28,6 @@ class Home : AppCompatActivity()
                         {
                             val wish = Intent(this, Favorite::class.java)
                             startActivity(wish)
-
-                            true
-                        }
-
-                        R.id.navigation_map ->
-                        {
-                            val maps = Intent(this, Maps::class.java)
-                            startActivity(maps)
 
                             true
                         }

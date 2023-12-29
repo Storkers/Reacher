@@ -7,11 +7,8 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
-import android.provider.MediaStore
 import android.content.Intent
-import android.app.Activity
 import android.widget.LinearLayout
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 class User : AppCompatActivity()
 {

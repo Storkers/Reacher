@@ -16,8 +16,22 @@
     <string name="button">Button</string>
     <string name="sign_in">Sign In</string>
     <string name="esqueci_minha_senha">Esqueci minha senha</string>
-    <string name="title_activity_maps">MapsActivity</string>
-    <string name="title_activity_maps2">MapsActivity2</string>
+    <string name="conta_do_usuario">conta do usuario</string>
+    <string name="fundo_dinamico">Fundo dinamico</string>
+    <string name="hiudy_martinhago_carvalho">Hiudy Martinhago Carvalho</string>
+    <string name="engenheiro_e_esportista_em_busca_de_novas_aventuras">Engenheiro e esportista em busca de novas aventuras</string>
+    <string name="minha_conta">Minha Conta</string>
+    <string name="configuracoes">configuracoes</string>
+    <string name="conta">Conta</string>
+    <string name="configura_es">Configurações</string>
+    <string name="configuraçoes">configuracoes</string>
+    <string name="configuraçooes">configuracoes</string>
+    <string name="historico">Historico</string>
+    <string name="Conta">Conta</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="termos_e_condi_es">Termos e Condições</string>
+    <string name="pagamentos">Pagamentos</string>
+    <string name="notifica_o">Notificação</string>
 
 
 </resources>

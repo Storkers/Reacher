@@ -6,22 +6,11 @@
     android:gravity="center"
     android:id="@+id/layout">
 
-    <ImageView
+    <VideoView
+        android:id="@+id/videoView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@drawable/areia"
-        android:contentDescription="@string/description_areia_image" />
+        android:layout_height="match_parent" />
 
-    <ImageView
-        android:layout_width="177dp"
-        android:layout_height="175dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="120dp"
-        android:layout_marginBottom="472dp"
-        android:src="@drawable/findex_logo"
-        android:contentDescription="@string/logo"/>
 
     <Button
         android:id="@+id/button1"
@@ -33,34 +22,8 @@
         android:layout_marginBottom="134dp"
         android:background="@drawable/rounded_button"
         android:text="Começar"
-        android:textColor="@android:color/white"
+        android:textColor="@color/blue"
         android:textSize="20sp"/>
-
-    <TextView
-        android:layout_width="401dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="6dp"
-        android:layout_marginBottom="362dp"
-        android:text="                 Explore. Supere. Conquiste."
-        android:textColor="@android:color/black"
-        android:textSize="20sp" />
-
-    <TextView
-        android:layout_width="401dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="335dp"
-        android:text="         Seja o heroi da sua propria aventura"
-        android:textColor="@android:color/black"
-        android:textSize="20sp" />
 
     <TextView
         android:layout_width="401dp"

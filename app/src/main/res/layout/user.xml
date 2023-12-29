@@ -50,7 +50,8 @@
                     android:scaleType="fitXY"
                     android:src="@drawable/begeazul"
                     tools:layout_editor_absoluteX="-6dp"
-                    tools:layout_editor_absoluteY="-3dp" />
+                    tools:layout_editor_absoluteY="-3dp"
+                    android:contentDescription="@string/fundo_dinamico" />
 
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/imageView5"
@@ -70,7 +71,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
-                    android:text="Hiudy Martinhago Carvalho"
+                    android:text="@string/hiudy_martinhago_carvalho"
                     android:textColor="@color/black"
                     android:textStyle="bold"
                     android:gravity="center"
@@ -84,7 +85,7 @@
                     android:layout_width="258dp"
                     android:layout_height="36dp"
                     android:layout_marginTop="12dp"
-                    android:text="Engenheiro e esportista em busca de novas aventuras"
+                    android:text="@string/engenheiro_e_esportista_em_busca_de_novas_aventuras"
                     app:layout_constraintEnd_toEndOf="parent"
                     android:textColor="@color/black"
                     android:textStyle="bold"
@@ -109,7 +110,7 @@
                 <ImageView
                     android:layout_width="32dp"
                     android:layout_height="32dp"
-                    android:contentDescription="conta do usuario"
+                    android:contentDescription="@string/conta_do_usuario"
                     android:src="@drawable/person_pin"
                     android:tint="@color/grey"
                     tools:ignore="UseAppTint" />
@@ -118,14 +119,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
-                    android:text="Minha Conta"
+                    android:text="@string/minha_conta"
                     android:textColor="@color/apple_text_color"
                     android:textSize="18sp" />
 
                 <ImageView
                     android:layout_width="370dp"
                     android:layout_height="32dp"
-                    android:contentDescription="configuracoes"
+                    android:contentDescription="@string/configuracoes"
                     android:src="@drawable/arrow_forward"
                     android:tint="@color/grey"
                     tools:ignore="UseAppTint" />
@@ -145,7 +146,7 @@
                 <ImageView
                     android:layout_width="32dp"
                     android:layout_height="32dp"
-                    android:contentDescription="Conta"
+                    android:contentDescription="@string/conta"
                     android:src="@drawable/settings"
                     android:tint="@color/grey"
                     tools:ignore="UseAppTint" />
@@ -154,14 +155,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
-                    android:text="Configurações"
+                    android:text="@string/configura_es"
                     android:textColor="@color/apple_text_color"
                     android:textSize="18sp" />
 
                 <ImageView
                     android:layout_width="340dp"
                     android:layout_height="32dp"
-                    android:contentDescription="configuracoes"
+                    android:contentDescription="@string/configuraçoes"
                     android:src="@drawable/arrow_forward"
                     android:tint="@color/grey"
                     tools:ignore="UseAppTint" />
@@ -181,7 +182,7 @@
                 <ImageView
                     android:layout_width="32dp"
                     android:layout_height="32dp"
-                    android:contentDescription="configuracoes"
+                    android:contentDescription="@string/configuraçooes"
                     android:src="@drawable/notifications"
                     android:tint="@color/grey"
                     tools:ignore="UseAppTint" />
@@ -190,7 +191,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
-                    android:text="Notificação"
+                    android:text="@string/notifica_o"
                     android:textColor="@color/apple_text_color"
                     android:textSize="18sp" />
 
@@ -200,7 +201,7 @@
                     android:contentDescription="configuracoes"
                     android:src="@drawable/arrow_forward"
                     android:tint="@color/grey"
-                    tools:ignore="UseAppTint" />
+                    tools:ignore="HardcodedText,UseAppTint" />
             </LinearLayout>
 
             <LinearLayout
@@ -220,13 +221,13 @@
                     android:contentDescription="Conta"
                     android:src="@drawable/monetization"
                     android:tint="@color/grey"
-                    tools:ignore="UseAppTint" />
+                    tools:ignore="HardcodedText,UseAppTint" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
-                    android:text="Pagamentos"
+                    android:text="@string/pagamentos"
                     android:textColor="@color/apple_text_color"
                     android:textSize="18sp" />
 
@@ -236,7 +237,7 @@
                     android:contentDescription="configuracoes"
                     android:src="@drawable/arrow_forward"
                     android:tint="@color/grey"
-                    tools:ignore="UseAppTint" />
+                    tools:ignore="HardcodedText,UseAppTint" />
             </LinearLayout>
 
             <LinearLayout
@@ -253,7 +254,7 @@
                 <ImageView
                     android:layout_width="32dp"
                     android:layout_height="32dp"
-                    android:contentDescription="Conta"
+                    android:contentDescription="@string/Conta"
                     android:src="@drawable/history"
                     android:tint="@color/grey"
                     tools:ignore="UseAppTint" />
@@ -262,7 +263,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
-                    android:text="Historico"
+                    android:text="@string/historico"
                     android:textColor="@color/apple_text_color"
                     android:textSize="18sp" />
 
@@ -272,7 +273,7 @@
                     android:contentDescription="configuracoes"
                     android:src="@drawable/arrow_forward"
                     android:tint="@color/grey"
-                    tools:ignore="UseAppTint" />
+                    tools:ignore="HardcodedText,UseAppTint" />
             </LinearLayout>
 
             <LinearLayout
@@ -292,13 +293,13 @@
                     android:contentDescription="Conta"
                     android:src="@drawable/newspaper"
                     android:tint="@color/grey"
-                    tools:ignore="UseAppTint" />
+                    tools:ignore="HardcodedText,UseAppTint" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
-                    android:text="Termos e Condições "
+                    android:text="@string/termos_e_condi_es"
                     android:textColor="@color/apple_text_color"
                     android:textSize="18sp" />
 
@@ -308,7 +309,7 @@
                     android:contentDescription="configuracoes"
                     android:src="@drawable/arrow_forward"
                     android:tint="@color/grey"
-                    tools:ignore="UseAppTint" />
+                    tools:ignore="HardcodedText,UseAppTint" />
 
             </LinearLayout>
 
@@ -317,7 +318,7 @@
                 android:layout_width="379dp"
                 android:layout_height="48dp"
                 android:background="@drawable/sign_out_background"
-                android:text="Sign Out"
+                android:text="@string/sign_out"
                 tools:layout_editor_absoluteX="-5dp"
                 tools:layout_editor_absoluteY="-6dp"
                 android:layout_marginEnd="16dp"

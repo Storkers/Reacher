@@ -1,6 +1,6 @@
 package com.example.reacherj
 
-import Home.Home
+
 import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -42,13 +42,6 @@ class Favorite: AppCompatActivity()
                         true
                     }
 
-                    R.id.navigation_map ->
-                    {
-                        val maps = Intent(this, Maps::class.java)
-                        startActivity(maps)
-
-                        true
-                    }
 
                     else -> false
                 }
