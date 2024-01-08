@@ -1,17 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/navigation_item_1"
+            android:title="Item 1"
+            android:icon="@drawable/home" />
 
         <item
-            android:id="@+id/navigation_home"
-            android:icon="@drawable/baseline_add_business_24"
-            android:title="Inicio"/>
-        <item
-            android:id="@+id/navigation_favorites"
-            android:icon="@drawable/heart_fill"
-            android:title="Favoritos"/>
-        <item
-            android:id="@+id/navigation_map"
-            android:icon="@drawable/map_line"
-            android:title="Mapa"/>
+            android:id="@+id/navigation_item_2"
+            android:title="Item 2"
+            android:icon="@drawable/history" />
 
+        <item
+            android:id="@+id/navigation_item_3"
+            android:title="Item 3"
+            android:icon="@drawable/shopping" />
+
+        <item
+            android:id="@+id/navigation_item_4"
+            android:title="Item 4"
+            android:icon="@drawable/map_line" />
 </menu>

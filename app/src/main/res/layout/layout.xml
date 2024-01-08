@@ -21,9 +21,9 @@
         android:layout_marginEnd="86dp"
         android:layout_marginBottom="134dp"
         android:background="@drawable/rounded_button"
-        android:text="Começar"
-        android:textColor="@color/blue"
-        android:textSize="20sp"/>
+        android:text="@string/come_ar"
+        android:textColor="#0091EA"
+        android:textSize="20sp" />
 
     <TextView
         android:layout_width="401dp"
@@ -32,9 +32,9 @@
         android:layout_alignParentBottom="true"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="-43dp"
-        android:layout_marginBottom="61dp"
-        android:text="                 Já possui conta?"
+        android:layout_marginEnd="-60dp"
+        android:layout_marginBottom="63dp"
+        android:text="@string/j_possui_conta"
         android:textColor="@android:color/black"
         android:textSize="15sp" />
 
@@ -45,12 +45,12 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_gravity="center"
-        android:layout_marginEnd="116dp"
+        android:layout_marginEnd="129dp"
         android:layout_marginBottom="47dp"
         android:clickable="true"
-        android:onClick="onLoginButtonClick"
+        android:focusable="true"
         android:padding="16dp"
-        android:text="Log in"
+        android:text="@string/log_in"
         android:textColor="@color/yellow"
         android:textSize="15sp"
         android:textStyle="bold" />

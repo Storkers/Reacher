@@ -1,34 +1,172 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    tools:context=".MainActivity">
 
-    <!-- Imagem de fundo -->
-    <ImageView
-        android:id="@+id/imageViewBackground"
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/mapFragment"
         android:layout_width="match_parent"
-        android:layout_height="200dp" />
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
 
-    <!-- Imagem de perfil -->
-    <ImageView
-        android:id="@+id/imageViewProfile"
-        android:layout_width="150dp"
-        android:layout_height="150dp" />
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="411dp"
+        android:layout_height="47dp"
+        android:background="@android:color/transparent"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="@+id/mapFragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/mapFragment"
+        app:layout_constraintVertical_bias="0.106">
 
-    <!-- Botões para selecionar novas imagens -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Texto 1 -->
+            <Button
+                android:id="@+id/textItem1"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/rounded_button_maps"
+                android:padding="8dp"
+                android:text="@string/todos"
+                android:textSize="10sp"
+                tools:ignore="SmallSp,TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/textItem12"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/rounded_button_maps"
+                android:padding="8dp"
+                android:text="@string/nascer_do_sol"
+                android:textSize="10sp"
+                tools:ignore="SmallSp,TouchTargetSizeCheck" />
+
+            <!-- Texto 2 -->
+            <Button
+                android:id="@+id/textItem2"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/rounded_button_maps"
+                android:padding="8dp"
+                android:text="@string/por_do_sol"
+                android:textSize="10sp"
+                tools:ignore="SmallSp,TouchTargetSizeCheck" />
+
+            <!-- Texto 3 -->
+            <Button
+                android:id="@+id/textItem3"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/rounded_button_maps"
+                android:padding="8dp"
+                android:text="@string/caminhada"
+                android:textSize="10sp"
+                tools:ignore="SmallSp,TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/textItem4"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/rounded_button_maps"
+                android:padding="8dp"
+                android:text="@string/bicicleta"
+                android:textSize="10sp"
+                tools:ignore="SmallSp,TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/textItem5"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/rounded_button_maps"
+                android:padding="8dp"
+                android:text="@string/corrida"
+                android:textSize="10sp"
+                tools:ignore="SmallSp,TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/textItem6"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/rounded_button_maps"
+                android:padding="8dp"
+                android:text="@string/trilha"
+                android:textSize="10sp"
+                tools:ignore="SmallSp" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
     <Button
-        android:id="@+id/buttonChangeBackground"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Alterar Imagem de Fundo" />
+        android:id="@+id/buttonLoginBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="344dp"
+        android:background="@drawable/button_background"
+        android:contentDescription="@string/botao_para_voltar_na_tela_anterior"
+        android:drawableStart="@drawable/arrow_back"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="onBackButtonClick"
+        android:padding="9dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,OnClick,UsingOnClickInXml" />
 
-    <Button
-        android:id="@+id/buttonChangeProfile"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Alterar Imagem de Perfil" />
+    <LinearLayout
+        android:layout_width="376dp"
+        android:layout_height="101dp"
+        android:layout_marginBottom="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/mapFragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="">
 
-</LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/mapFragment"
+            app:layout_constraintEnd_toEndOf="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
+            app:layout_constraintVertical_bias="0.968" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
 

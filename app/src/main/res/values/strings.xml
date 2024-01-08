@@ -32,6 +32,25 @@
     <string name="termos_e_condi_es">Termos e Condições</string>
     <string name="pagamentos">Pagamentos</string>
     <string name="notifica_o">Notificação</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="explore">Explore</string>
+    <string name="todos">Todos</string>
+    <string name="item_2">Item 2</string>
+    <string name="item_3">Item 3</string>
+    <string name="item_4">Item 4</string>
+    <string name="item_5">Item 5</string>
+    <string name="item_6">Item 6</string>
+    <string name="por_do_sol">Por do Sol</string>
+    <string name="caminhada">Caminhada</string>
+    <string name="bicicleta">Bicicleta</string>
+    <string name="corrida">Corrida</string>
+    <string name="trilha">Trilha</string>
+    <string name="nascer_do_sol">Nascer do Sol</string>
+    <string name="come_ar">Começar</string>
+    <string name="j_possui_conta">Já possui conta?</string>
+    <string name="log_in">Log in</string>
+    <string name="criar_nova_conta">Criar nova conta</string>
 
 
 </resources>

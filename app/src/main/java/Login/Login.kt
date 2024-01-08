@@ -4,6 +4,8 @@ import android.annotation.SuppressLint
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import android.view.Window;
+import android.view.WindowManager
 import com.example.reacherj.R
 
 class Login : AppCompatActivity()

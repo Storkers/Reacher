@@ -1,45 +1,46 @@
 package com.example.reacherj
 
-
+import Shopping.Shopping
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.reacherj.Favorite
-import com.example.reacherj.R
-import com.example.reacherj.User
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.google.android.material.floatingactionbutton.FloatingActionButton
 
+class Home : AppCompatActivity() {
 
-class Home : AppCompatActivity()
-{
-        private lateinit var bottomNavigationView: BottomNavigationView
-        override fun onCreate(savedInstanceState: Bundle?) {
-            super.onCreate(savedInstanceState)
-            setContentView(R.layout.home)
+    private lateinit var bottomNavigation: BottomNavigationView
 
-            bottomNavigationView = findViewById(R.id.bottom_navigation)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.home)
 
-            bottomNavigationView.setOnItemSelectedListener { menuItem ->
-                when (menuItem.itemId) {
+        bottomNavigation = findViewById(R.id.bottom_navigation)
+        bottomNavigation.setOnNavigationItemSelectedListener(onNavigationItemSelectedListener)
+    }
 
-
-                        R.id.navigation_favorites ->
-                        {
-                            val wish = Intent(this, Favorite::class.java)
-                            startActivity(wish)
-
-                            true
-                        }
-
-                    else -> false
+    private val onNavigationItemSelectedListener =
+        BottomNavigationView.OnNavigationItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.navigation_item_1 -> {
+                    startActivity(Intent(this, Home::class.java))
+                    return@OnNavigationItemSelectedListener true
+                }
+                R.id.navigation_item_2 -> {
+                    startActivity(Intent(this, Favorite::class.java))
+                    return@OnNavigationItemSelectedListener true
+                }
+                R.id.navigation_item_3 -> {
+                    startActivity(Intent(this, Shopping::class.java))
+                    return@OnNavigationItemSelectedListener true
+                }
+                R.id.navigation_item_4 -> {
+                    startActivity(Intent(this, Mapa::class.java))
+                    return@OnNavigationItemSelectedListener true
                 }
             }
-
-            val buttonUser = findViewById<FloatingActionButton>(R.id.floatingActionButton)
-            buttonUser.setOnClickListener{
-
-                val intent2 = Intent(this, User::class.java);
-                startActivity(intent2);}
-            }
+            false
         }
+}
+
+
+
