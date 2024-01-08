@@ -29,7 +29,7 @@ class PlaceAdapter(private val placeList: List<Place>): RecyclerView.Adapter<Pla
 
     override fun onBindViewHolder(holder: PlaceViewHolder, position: Int) {
 
-        return placeList.size
+        //return placeList.size
 
     }
 }
