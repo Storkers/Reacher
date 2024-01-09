@@ -6,11 +6,6 @@
     android:gravity="center"
     android:id="@+id/layout">
 
-    <VideoView
-        android:id="@+id/videoView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
 
     <Button
         android:id="@+id/button1"

@@ -18,21 +18,21 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.layout)
 
-        val videoView = findViewById<VideoView>(R.id.videoView)
+        //val videoView = findViewById<VideoView>(R.id.videoView)
 
         // Caminho do vídeo MP4 dentro da pasta 'res/raw'
-        val videoPath = "android.resource://" + packageName + "/" + R.raw.fundo_animado
-        val uri = Uri.parse(videoPath)
+       // val videoPath = "android.resource://" + packageName + "/" + R.raw.fundo_animado
+       // val uri = Uri.parse(videoPath)
 
-        val videoUri = Uri.parse(videoPath)
-        videoView.setVideoURI(videoUri)
+        //val videoUri = Uri.parse(videoPath)
+       // videoView.setVideoURI(videoUri)
 
-        val mediaController = MediaController(this)
-        mediaController.setAnchorView(videoView)
-        videoView.setMediaController(mediaController)
+        //val mediaController = MediaController(this)
+        //mediaController.setAnchorView(videoView)
+        //videoView.setMediaController(mediaController)
 
-        videoView.setVideoURI(uri)
-        videoView.start()
+        //videoView.setVideoURI(uri)
+        //videoView.start()
 
         val buttonLogin = findViewById<TextView>(R.id.loginButton)
         buttonLogin.setOnClickListener {
