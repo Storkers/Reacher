@@ -82,7 +82,7 @@ class Mapa : AppCompatActivity(), OnMapReadyCallback {
                             // Adiciona um marcador no mapa para cada coordenada
                             runOnUiThread {
                                 mMap.addMarker(
-                                    MarkerOptions().position(location).title("Nome: $i")
+                                    MarkerOptions().position(location).title("Marcador: $i")
                                 )
                             }
                         }
