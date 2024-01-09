@@ -31,6 +31,12 @@ class Mapa : AppCompatActivity(), OnMapReadyCallback {
             finish() // Chama o método padrão de voltar
         }
 
+        val url = "https://json-server-six-bay.vercel.app/parana" // URL do servidor JSON
+
+
+        val client = OkHttpClient() //Teste Cliente
+
+        //Conexao request
         val btnTodos = findViewById<Button>(R.id.textItem1)
         val btnPordoSol = findViewById<Button>(R.id.textItem2)
         val btnCaminhada = findViewById<Button>(R.id.textItem3)
@@ -40,12 +46,6 @@ class Mapa : AppCompatActivity(), OnMapReadyCallback {
         mapFragment.getMapAsync(this)
 
 
-        val url = "https://json-server-six-bay.vercel.app/parana" // URL do servidor JSON
-
-
-        val client = OkHttpClient() //Teste Cliente
-
-        //Conexao request
         val request = Request.Builder()
             .url(url)
             .build()
