@@ -40,12 +40,12 @@ class Mapa : AppCompatActivity(), OnMapReadyCallback {
         mapFragment.getMapAsync(this)
 
 
-        val url = "https://json-server-six-bay.vercel.app/parana" // Sua URL do servidor JSON
+        val url = "https://json-server-six-bay.vercel.app/parana" // URL do servidor JSON
 
 
-        val client = OkHttpClient()
+        val client = OkHttpClient() //Teste Cliente
 
-
+        //Conexao request
         val request = Request.Builder()
             .url(url)
             .build()
