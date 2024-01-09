@@ -161,7 +161,7 @@ class Mapa : AppCompatActivity(), OnMapReadyCallback {
                                     // Adiciona um marcador no mapa para cada coordenada da categoria "caminhada"
                                     runOnUiThread {
                                         mMap.addMarker(
-                                            MarkerOptions().position(location).title("Marcador $i - Caminhada")
+                                            MarkerOptions().position(location).title("Marcado $i - Caminhada")
                                         )
                                     }
                                 }
